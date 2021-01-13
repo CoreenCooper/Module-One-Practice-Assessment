@@ -7,6 +7,16 @@
  *
  */
 
-function everyOtherLetter() {}
+function everyOtherLetter(str) {
+  let evenIdxChar = "";
+  for (let i = 0; i <= str.length; i += 2) {
+    if (str === "") {
+        return "";
+      } else {
+        evenIdxChar += str[i];
+    }
+  }
+  return evenIdxChar;
+}
 
 module.exports = everyOtherLetter;
