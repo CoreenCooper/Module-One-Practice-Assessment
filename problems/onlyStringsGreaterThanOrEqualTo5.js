@@ -7,6 +7,10 @@
  * returns ["hello", "corey"]
  */
 
-function onlyStringsGreaterThanOrEqualTo5() {}
+function onlyStringsGreaterThanOrEqualTo5(words) {
+    return words.filter((el) => {
+        return el.length > 4
+    })
+}
 
 module.exports = onlyStringsGreaterThanOrEqualTo5;
