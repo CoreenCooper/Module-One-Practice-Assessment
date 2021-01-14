@@ -9,13 +9,7 @@
  */
 
 function isDivisibleBy9(num) {
-   if (num === 0) {
-    return false
-   } else if (num % 9 === 0) {
-       return true
-   } else {
-       return false
-   }
+   return num % 9 === 0;
 }
 
 module.exports = isDivisibleBy9;
