@@ -8,7 +8,7 @@
  *
  */
 
-function isDivisibleBy9(num) {
+const isDivisibleBy9 = (num) => {
    return num % 9 === 0;
 }
 
