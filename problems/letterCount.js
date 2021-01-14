@@ -13,11 +13,7 @@ function letterCount(str) {
     let obj = {};
     for (let i = 0; i < strNoSpace.length; i++) {
       const el = strNoSpace[i];
-      if (obj[el]) {
-        obj[el] += 1;
-      } else {
-        obj[el] = 1;
-      }
+      obj[el] ? obj[el] += 1 : obj[el] = 1;
     }
     return obj;
 }
