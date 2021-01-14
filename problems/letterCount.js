@@ -22,9 +22,7 @@ function letterCount(str) {
     return obj;
 }
 
-console.log(letterCount(""))
-console.log(letterCount("hello"))
-console.log()
-console.log(letterCount("HeLlo World"))
+// return obj[el] ? obj[el] += 1 : obj[el] = 1;
+
 
 module.exports = letterCount;

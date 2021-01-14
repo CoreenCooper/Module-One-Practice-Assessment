@@ -5,10 +5,10 @@ describe("letterCount", () => {
     expect(letterCount("")).toEqual({});
   });
   test("returns the right count", () => {
-    expect(letterCount("hello")).toEqual({h: 1, e: 1, l: 2, O: 1});
+    expect(letterCount("hello")).toEqual({h: 1, e: 1, l: 2, o: 1});
   });
   test("is insensitive to capital letters", () => {
-    expect(letterCount("HeLlo")).toEqual({h: 1, e: 1, l: 2, O: 1});
+    expect(letterCount("HeLlo")).toEqual({h: 1, e: 1, l: 2, o: 1});
   });
   test("correctly ignores spaces", () => {
     expect(letterCount("HeLlo World")).toEqual({
