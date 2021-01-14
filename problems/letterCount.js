@@ -18,7 +18,4 @@ function letterCount(str) {
     return obj;
 }
 
-// return obj[el] ? obj[el] += 1 : obj[el] = 1;
-
-
 module.exports = letterCount;
