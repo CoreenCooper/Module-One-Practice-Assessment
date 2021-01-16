@@ -17,10 +17,11 @@
 ]
  */
 
-function sortPeopleByAge(people) {
+function sortPeopleByAge(people) { // sort - mutates the original array
   return people.sort((keyNameFirst, keyNameSecond) => { 
-    return keyNameFirst["age"] - keyNameSecond["age"]
+    return keyNameFirst["age"] - keyNameSecond["age"] // or keyNameFirst.age 
   })
 }
+
 
 module.exports = sortPeopleByAge;

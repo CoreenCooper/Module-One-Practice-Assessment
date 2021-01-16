@@ -7,10 +7,14 @@
  * returns ["hello", "corey"]
  */
 
-function onlyStringsGreaterThanOrEqualTo5(words) {
-    return words.filter((el) => {
-        return el.length > 4
-    })
+// function onlyStringsGreaterThanOrEqualTo5(words) { // filter should only have one condition inside
+//     return words.filter((el) => {
+//         return el.length > 4
+//     })
+// }
+
+function onlyStringsGreaterThanOrEqualTo5(words) { // Sparky - one liner 
+    return words.filter((el) => el.length >= 5)
 }
 
 module.exports = onlyStringsGreaterThanOrEqualTo5;

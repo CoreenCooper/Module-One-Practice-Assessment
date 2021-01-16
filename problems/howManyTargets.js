@@ -8,14 +8,24 @@
  *
  */
 
+// function howManyTargets(arr, target) {
+//     let occurance = 0;
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === target) {
+//             occurance += 1
+//         }
+//     }
+//     return occurance
+// }
+
 function howManyTargets(arr, target) {
-    let occurance = 0;
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === target) {
-            occurance += 1
+    let counter = 0;
+    arr.forEach((el) => {
+        if(el === target) {
+            counter++;
         }
-    }
-    return occurance
+    })
+    return counter;
 }
 
 module.exports = howManyTargets;

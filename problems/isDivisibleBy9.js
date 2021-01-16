@@ -9,7 +9,7 @@
  */
 
 const isDivisibleBy9 = (num) => {
-   return num % 9 === 0;
+   return num % 9 === 0; // true of false
 }
 
 module.exports = isDivisibleBy9;

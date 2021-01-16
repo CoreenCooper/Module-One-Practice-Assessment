@@ -9,8 +9,8 @@
 
 function everyOtherLetter(str) {
   let evenIdxChar = "";
-  for (let i = 0; i < str.length; i += 2) {
-        evenIdxChar += str[i];
+  for (let i = 0; i < str.length; i += 2) { // iterate thru even nums
+        evenIdxChar += str[i]; // concatentate str
   }
   return evenIdxChar;
 }

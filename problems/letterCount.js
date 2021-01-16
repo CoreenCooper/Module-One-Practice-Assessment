@@ -7,7 +7,8 @@
  *
  */
 
-function letterCount(str) {
+ // try with forEach 
+function letterCount(str) { 
     let newArr = str.toLowerCase().split(" ");
     let strNoSpace = newArr.join("");
     let obj = {};
@@ -17,5 +18,31 @@ function letterCount(str) {
     }
     return obj;
 }
+
+// function letterCount(str) { // debug
+//   str = str.toLowerCase();
+//   let obj = {};
+//   for (const char of str) {
+//     if(char !== " ") {
+//         if(obj[char]){
+//           obj[char] + 1;
+//         } else {
+//           obj[char] = 1;
+//         }
+//     } 
+    // console.log(char)
+
+    // function letterCount(str) {
+//     let newArr = str.toLowerCase().split(" ");
+//     let strNoSpace = newArr.join("");
+//     let obj = {};
+
+//   }
+//   return obj
+// }
+
+
+// letterCount("letterCount")
+
 
 module.exports = letterCount;
